@@ -1,7 +1,7 @@
 # 📊 Telecom Customer Churn Analysis
 ### End-to-End Analytics Project | Excel · SQL · Power BI
 
-![Executive Summary](assets/images/Executive-Summary.png)
+![Executive Summary](assets/images/Executive%20Summary.png)
 ---
 
 ## 🗂️ Project Overview

@@ -164,6 +164,7 @@ FROM telecom_churn
 GROUP BY customer_status
 ORDER BY percentage DESC;
 ```
+![SQL Overall Churn Rate](assets/images/SQL%20Overall%20Churn%20Rate.png)
 
 **High Risk Customer Profile**
 ```sql

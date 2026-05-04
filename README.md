@@ -183,6 +183,9 @@ ORDER BY churn_rate DESC
 LIMIT 10;
 ```
 
+![High risk customer profile](assets/images/High%20risk%20customer%20profile%20.png)
+
+
 **Revenue Lost to Churn**
 ```sql
 SELECT
@@ -196,6 +199,7 @@ FROM telecom_churn
 GROUP BY customer_status
 ORDER BY total_revenue DESC;
 ```
+![Revenue lost to churn](assets/images/Revenue%20lost%20to%20churn.png)
 
 **Add-on Services Impact**
 ```sql
@@ -212,8 +216,23 @@ SELECT 'Premium Tech Support', premium_tech_support,
 FROM telecom_churn GROUP BY premium_tech_support
 ORDER BY add_on_service, churn_rate DESC;
 ```
-
+![Churn by Add-on Service](assets/images/churn%20by%20Add-on%20Service.png)
 ---
+![Churn rate by payment method](assets/images/Churn%20rate%20by%20payment%20method.png)
+
+![Churn rate by internet type](assets/images/Churn%20rate%20by%20internet%20type.png)
+
+![SQL Churn rate by Contract Type](assets/images/SQL%20Churn%20rate%20by%20Contract%20Type.png)
+
+![Top churn reasons ranked](assets/images/Top%20churn%20reasons%20ranked.png)
+
+![Top cities by revenue lost to churn](assets/images/Top%20cities%20by%20revenue%20lost%20to%20churn.png)
+
+![Churn by number of referrals](assets/images/churn%20by%20number%20of%20referrals%20.png)
+
+![Churn rate by Age group](assets/images/churn%20rate%20by%20Age%20group.png)
+
+![Churn rate by offer](assets/images/churn%20rate%20by%20offer.png)
 
 ## 📈 Stage 3 — Power BI Dashboard
 

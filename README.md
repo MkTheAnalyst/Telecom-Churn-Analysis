@@ -265,6 +265,69 @@ CALCULATE(
     AVERAGE(telecom_churn[total_revenue]),
     telecom_churn[customer_category] = "Loyal Customer"
 )
+
+Top Churn Offer = 
+MAXX(
+    TOPN(
+        1,
+        ADDCOLUMNS(
+            VALUES('Telecom_churn_clean'[Offer]),
+            "Rate",
+                DIVIDE(
+                    CALCULATE(
+                        COUNTROWS('Telecom_churn_clean'),
+                        'Telecom_churn_clean'[Customer Status] = "Churned"
+                    ),
+                    CALCULATE(
+                        COUNTROWS('Telecom_churn_clean')
+                    )
+                )
+        ),
+        [Rate], DESC
+    ),
+    'Telecom_churn_clean'[Offer]
+)
+
+New Customer Churn Rate = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS('Telecom_churn_clean'),
+        'Telecom_churn_clean'[Customer Status] = "Churned",
+        'Telecom_churn_clean'[Tenure in Months] <= 6
+    ),
+    CALCULATE(
+        COUNTROWS('Telecom_churn_clean'),
+        'Telecom_churn_clean'[Tenure in Months] <= 6
+    )
+)
+
+Avg Tenure Churned = 
+CALCULATE(
+    AVERAGE(Telecom_churn_clean[Tenure in Months]),
+    Telecom_churn_clean[Customer Status] = "Churned"
+)
+
+Top Offer Label = 
+VAR TopOffer = [Top Churn Offer]
+
+VAR ChurnedCount =
+    CALCULATE(
+        COUNTROWS('Telecom_churn_clean'),
+        'Telecom_churn_clean'[Customer Status] = "Churned",
+        'Telecom_churn_clean'[Offer] = TopOffer
+    )
+
+VAR TotalCount =
+    CALCULATE(
+        COUNTROWS('Telecom_churn_clean'),
+        'Telecom_churn_clean'[Offer] = TopOffer
+    )
+
+RETURN
+FORMAT(ChurnedCount, "#,##0") & 
+" of " & 
+FORMAT(TotalCount, "#,##0") & 
+" customers"
 ```
 
 ### Dashboard Pages

@@ -343,12 +343,12 @@ telecom-churn-analysis/
 ## 👤 About
 
 **Finance Graduate → Data Analyst**
-University of Lagos · B.Sc. Finance (Second Class Upper — 4.13/5.0)
+University of Lagos · B.Sc. Finance Hons(Second Class Upper)
 
-Skills: Excel · SQL · Power BI · Python (learning)
+Skills: Excel · SQL · Power BI · Python
 Background: Finance + Data Analysis · VC Externship (Extern HP Tech Venture Capital)
 
-📧 Connect with me on [LinkedIn](your-linkedin-url)
+📧 Connect with me on [LinkedIn](https://www.linkedin.com/in/mustapha-kehinde-quhar/))
 ⭐ If you found this project useful, please give it a star!
 
 ---

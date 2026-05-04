@@ -2,6 +2,9 @@
 ### End-to-End Analytics Project | Excel · SQL · Power BI
 
 ![Executive Summary](assets/images/Executive%20Summary.png)
+![Churn Deep Dive](assets/images/Churn%20deep%20dive.png)
+![Risk and Revenue](assets/images/Risk%20and%20Revenue.png)
+![Churn Analysis Process Flow](assets/images/Churn_Analysis_Process_Flow.png)
 ---
 
 ## 🗂️ Project Overview

@@ -74,13 +74,13 @@ Business Insights & Recommendations
 ## 📊 Dashboard Preview
 
 ### Page 1 — Executive Summary (What is happening?)
-![Executive Summary](images/page1_executive_summary.png)
+![Executive Summary](assets/images/Executive%20Summary.png)
 
 ### Page 2 — Deep Churn Dive (Why is it happening?)
-![Deep Churn Dive](images/page2_deep_churn_dive.png)
+![Churn Deep Dive](assets/images/Churn%20deep%20dive.png)
 
 ### Page 3 — Risk & Revenue (Who is at risk and what does it cost?)
-![Risk and Revenue](images/page3_risk_revenue.png)
+![Risk and Revenue](assets/images/Risk%20and%20Revenue.png)
 
 ---
 
